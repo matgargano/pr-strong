@@ -1,14 +1,40 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, MapPin, Users, Heart, Star, Quote } from "lucide-react";
 import heroBanner from "@/assets/hero-banner.jpg";
 import treeLighting from "@/assets/tree-lighting.jpg";
 import scaliciBanner from "@/assets/scalici-banner.jpg";
+import HamburgerIcon from "@/components/HamburgerIcon";
+import MobileMenu from "@/components/MobileMenu";
+import DemoModal from "@/components/DemoModal";
 
 const VariationTwo = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement;
+    
+    // Only intercept if not hamburger, modal, or mobile menu elements
+    if (
+      !target.closest('#mobile-menu-button') &&
+      !target.closest('.demo-modal-content') &&
+      !target.id.includes('hamburger') &&
+      !target.closest('[id*="hamburger"]') &&
+      !target.closest('[data-mobile-menu="true"]')
+    ) {
+      // Prevent navigation if clicking on a link
+      if (target.tagName === 'A' || target.closest('a')) {
+        e.preventDefault();
+      }
+      setModalOpen(true);
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-background font-dm">
+    <div className="min-h-screen bg-background font-dm" onClick={handleLinkClick}>
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-40 bg-card/90 backdrop-blur-md border-b border-border">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-card/90 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-6 py-5 flex items-center justify-between">
           <a href="#" className="group">
             <h1 className="font-playfair text-2xl text-foreground">
@@ -29,11 +55,30 @@ const VariationTwo = () => {
             ))}
           </div>
 
-          <Button variant="warm" size="lg">
-            Report Issue
-          </Button>
+          <div className="flex items-center gap-4">
+            <Button variant="warm" size="lg" className="hidden md:flex">
+              Report Issue
+            </Button>
+            <HamburgerIcon
+              isOpen={mobileMenuOpen}
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="text-foreground"
+            />
+          </div>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      <MobileMenu
+        isOpen={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
+      />
+
+      {/* Demo Modal */}
+      <DemoModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+      />
 
       {/* Hero Section */}
       <section className="min-h-screen pt-24 pb-12 flex items-center">
