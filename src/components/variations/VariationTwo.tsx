@@ -139,16 +139,16 @@ const VariationTwo = () => {
                 alt="Holiday Tree Lighting"
                 className="w-full h-full object-cover aspect-[4/3] group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/40 to-transparent" />
+              <div className="bg-[#000000] opacity-60 hover:opacity-0 absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/40 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
-                <span className="inline-flex items-center gap-2 text-cream/80 text-sm mb-3">
+                <span className="text-cream inline-flex items-center gap-2 text-cream/80 text-sm mb-3">
                   <Calendar className="w-4 h-4" />
                   December 2025
                 </span>
-                <h3 className="font-playfair text-3xl text-cream mb-3">
+                <h3 className=" font-playfair text-3xl text-cream mb-3">
                   Annual Holiday Tree Lighting
                 </h3>
-                <p className="text-cream/70 mb-4">
+                <p className="text-cream mb-4">
                   Come see the largest tree lighting on Staten Island! Help us spread holiday cheer.
                 </p>
                 <Button 
