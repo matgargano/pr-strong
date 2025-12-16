@@ -93,6 +93,7 @@ const DemoModal = ({ isOpen, onClose }: DemoModalProps) => {
 
         {/* Call to Action Button */}
         <div className="space-y-4">
+            <a href="tel:+16463970468">
           <Button
             variant="warm"
             size="lg"
@@ -105,14 +106,12 @@ const DemoModal = ({ isOpen, onClose }: DemoModalProps) => {
             <Phone className="w-5 h-5 mr-2" />
             Call Us
           </Button>
+          </a>
 
           {/* Contact Link */}
           <a
-            href="#contact"
-            onClick={(e) => {
-              e.stopPropagation();
-              onClose();
-            }}
+            href="https://waypoint.agency/contact/"
+            
             className="block text-center text-primary hover:text-primary/80 font-medium transition-colors"
           >
             Visit Contact Page

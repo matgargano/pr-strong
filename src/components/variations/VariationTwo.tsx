@@ -117,7 +117,7 @@ const VariationTwo = () => {
               <div className="relative">
                 <img 
                   src={heroBanner} 
-                  alt="Port Richmond Community"
+                  alt="Port Richmond North Shore Alliance Community"
                   className="w-full rounded-3xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-2xl shadow-xl border border-border">
@@ -143,7 +143,7 @@ const VariationTwo = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: Users, title: "Community First", desc: "Bringing neighbors together through events, advocacy, and shared purpose." },
-              { icon: Star, title: "Honor Our Heroes", desc: "Celebrating veterans and community leaders who make Port Richmond special." },
+              { icon: Star, title: "Honor Our Heroes", desc: "Celebrating veterans and community leaders who make Port Richmond North Shore Alliance special." },
               { icon: Heart, title: "Local Pride", desc: "Supporting small businesses and preserving our neighborhood's unique character." },
             ].map((item, index) => (
               <div 
@@ -216,7 +216,7 @@ const VariationTwo = () => {
                   <div className="flex-1">
                     <span className="text-primary text-xs font-medium tracking-wider uppercase">Community</span>
                     <h4 className="font-playfair text-xl text-foreground mt-1 mb-2">Street Co-naming Ceremony</h4>
-                    <p className="text-muted-foreground text-sm mb-3">Honoring Victor Scalici at Port Richmond Avenue & Hooker Place.</p>
+                    <p className="text-muted-foreground text-sm mb-3">Honoring Victor Scalici at Port Richmond Avenue & Hooker Place and North Shore Alliance.</p>
                     <Button variant="warmGhost" size="sm" className="p-0 h-auto">
                       Details <ArrowRight className="ml-1 w-3 h-3" />
                     </Button>
@@ -300,7 +300,7 @@ const VariationTwo = () => {
           <div className="grid md:grid-cols-4 gap-12">
             <div className="md:col-span-2">
               <h3 className="font-playfair text-2xl text-background mb-4">
-                Port Richmond <span className="italic">Strong</span>
+                Port Richmond <span className="italic">North Shore Alliance</span>
               </h3>
               <p className="text-background/60 max-w-md leading-relaxed">
                 A civic association dedicated to building a stronger, more connected community in Port Richmond, Staten Island.
@@ -340,7 +340,7 @@ const VariationTwo = () => {
           
           <div className="border-t border-background/10 mt-12 pt-8 text-center">
             <p className="text-background/40 text-sm">
-              © 2024 Port Richmond Strong. All rights reserved.
+              © 2025 Port Richmond North Shore Alliance. All rights reserved.
             </p>
           </div>
         </div>

@@ -57,7 +57,7 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
           {/* Header */}
           <div className="flex items-center justify-between mb-8">
             <h2 className="font-playfair text-2xl text-foreground">
-              Port Richmond <span className="text-primary italic">Strong</span>
+              Port Richmond <span className="text-primary italic">North Shore Alliance</span>
             </h2>
             <button
               onClick={onClose}

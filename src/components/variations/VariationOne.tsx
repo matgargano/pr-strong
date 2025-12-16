@@ -16,7 +16,7 @@ const VariationOne = () => {
             </div>
             <div>
               <h1 className="font-bebas text-xl text-primary-foreground tracking-wider">PORT RICHMOND</h1>
-              <p className="text-xs text-primary-foreground/70 tracking-widest uppercase">Strong</p>
+              <p className="text-xs text-primary-foreground/70 tracking-widest uppercase">NORTH SHORE ALLIANCE</p>
             </div>
           </div>
           
@@ -49,17 +49,17 @@ const VariationOne = () => {
         <div className="relative z-10 container mx-auto px-6 text-center">
           <div className="opacity-0 animate-fade-up">
             <span className="inline-block px-4 py-2 bg-accent text-accent-foreground text-sm font-medium tracking-widest uppercase mb-6">
-              Staten Island's Civic Association
+              Port Richmond North Shore Alliance
             </span>
           </div>
           
           <h1 className="opacity-0 animate-fade-up stagger-1 font-bebas text-6xl md:text-8xl lg:text-9xl text-primary-foreground leading-none tracking-tight mb-6">
             PORT RICHMOND
-            <span className="block text-accent">STRONG</span>
+            <span className="block text-accent">NORTH SHORE ALLIANCE</span>
           </h1>
           
           <p className="opacity-0 animate-fade-up stagger-2 text-xl md:text-2xl text-primary-foreground/80 max-w-2xl mx-auto mb-10 font-light">
-            Building a stronger community through unity, advocacy, and action. Together, we make Port Richmond thrive.
+            Building a stronger community through unity, advocacy, and action. Together, we make Port Richmond North Shore Alliance thrive.
           </p>
           
           <div className="opacity-0 animate-fade-up stagger-3 flex flex-col sm:flex-row gap-4 justify-center">
@@ -154,7 +154,7 @@ const VariationOne = () => {
                   STREET CO-NAMING CEREMONY
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4">
-                  Honoring Victor Scalici, life-long resident and owner of Scalici Florist at Port Richmond Avenue.
+                  Honoring Victor Scalici, life-long resident and owner of Scalici Florist at Port Richmond and North Shore Alliance.
                 </p>
                 <Button variant="civic" size="sm" className="w-full">
                   Learn More
@@ -198,7 +198,7 @@ const VariationOne = () => {
                 BUILDING A STRONGER COMMUNITY
               </h2>
               <p className="text-primary-foreground/80 text-lg mb-8 leading-relaxed">
-                Port Richmond Strong is dedicated to fostering unity, addressing community concerns, and celebrating the rich heritage of our neighborhood. We advocate for residents, support local businesses, and honor those who serve.
+                Port Richmond North Shore Alliance is dedicated to fostering unity, addressing community concerns, and celebrating the rich heritage of our neighborhood. We advocate for residents, support local businesses, and honor those who serve.
               </p>
               
               <div className="grid grid-cols-2 gap-6">
@@ -237,7 +237,7 @@ const VariationOne = () => {
             JOIN OUR COMMUNITY
           </h2>
           <p className="text-accent-foreground/80 text-xl max-w-2xl mx-auto mb-10">
-            Be part of something bigger. Help us build a stronger, more connected Port Richmond.
+            Be part of something bigger. Help us build a stronger, more connected Port Richmond North Shore Alliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -266,7 +266,7 @@ const VariationOne = () => {
               </div>
               <div>
                 <h1 className="font-bebas text-xl text-primary-foreground tracking-wider">PORT RICHMOND</h1>
-                <p className="text-xs text-primary-foreground/70 tracking-widest uppercase">Strong</p>
+                <p className="text-xs text-primary-foreground/70 tracking-widest uppercase">NORTH SHORE ALLIANCE</p>
               </div>
             </div>
             
@@ -283,7 +283,7 @@ const VariationOne = () => {
             </div>
             
             <p className="text-primary-foreground/50 text-sm">
-              © 2024 Port Richmond Strong. All rights reserved.
+              © 2025 Port Richmond North Shore Alliance. All rights reserved.
             </p>
           </div>
         </div>
